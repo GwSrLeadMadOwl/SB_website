@@ -2,7 +2,7 @@
   text-align: center;
 }
 
-.App-logo {
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
@@ -11,10 +11,16 @@
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
+} */
 
 .App-header {
-  background-color: #282c34;
+  background-color: #13072a;
+  background-image: url("./img/SB skull.png");
+  background-size: 300px 300px;
+  background-position: 20px 40px;
+  position: inherit;
+  animation: diagonal linear 10s infinite;
+  z-index: -2;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -22,6 +28,17 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+@keyframes diagonal {
+  from{background-position-x: 0px; background-position-y: 0px;}
+  to{background-position-x: 150px; background-position-y: -150px;}
+}
+
+img{
+  height: 300px;
+  /* min-width: 100%; */
+  /* z-index: 1; */
 }
 
 .App-link {
