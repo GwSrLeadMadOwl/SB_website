@@ -1,55 +1,91 @@
-.App {
-  text-align: center;
+.main {
+  /* text-align: center; */
+  color: goldenrod;
+  overflow: hidden;
 }
 
-/* .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.hoc{
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-color: black;
+  z-index: 2;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.bg_img{
+  position: absolute;
+  width: 100%;
+  /* transform: translateX(-30%); */
+  z-index: -1;
+  /* bottom: -450vh; */
+  /* bottom: 100%; */
+}
+
+.sky{
+  top: 0;
+}
+
+.bg_1{
+  top: 120vh;
+}
+
+.hotel{
+  /* position: relative; */
+  /* top: 10vh; */
+}
+
+.logo_container{
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+}
+
+.sb-logo{
+  position: absolute;
+  z-index: 1;
+  height: 500px;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+}
+
+.fg_2{
+  top:170vh;
+}
+
+.fg_1{
+  top:300vh;
+}
+
+section{
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 3px solid #000;
+}
+
+@media screen and (max-width: 900px) {
+  .sb-logo{
+      /* height: clamp(200px, 900px, 500px); */
+      height: 200px;
   }
-} */
+}
 
-.App-header {
+/* .background {
+  position: inherit;
+  top: 0;
+  min-height: 100vh;
   background-color: #13072a;
-  background-image: url("./img/SB skull.png");
+  background-image: url("./components/img/SB skull.png");
   background-size: 300px 300px;
   background-position: 20px 40px;
-  position: inherit;
   animation: diagonal linear 10s infinite;
   z-index: -2;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-@keyframes diagonal {
-  from{background-position-x: 0px; background-position-y: 0px;}
-  to{background-position-x: 150px; background-position-y: -150px;}
-}
-
-img{
-  height: 300px;
-  /* min-width: 100%; */
-  /* z-index: 1; */
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+} */

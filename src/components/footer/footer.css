@@ -1,0 +1,29 @@
+footer
+{
+    height: 40px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    /* background: linear-gradient(rgba(0,0,0,0), black 50%); */
+    text-align: center;
+    color: goldenrod;
+}
+
+img.mad-owl-logo{
+    position: absolute;
+    height: 40px;
+    fill: #daa520;
+    filter: invert(58%) sepia(42%) saturate(761%) hue-rotate(5deg) brightness(105%) contrast(94%);
+    right: 5%;
+    bottom: 10px;
+}
+
+@media screen and (max-width: 900px){
+    footer{
+        text-align: left;
+        padding-left: 15px;
+    }
+    img.mad-owl-logo{
+        right: 15px;
+    }
+}

@@ -1,13 +1,39 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Loved+by+the+King&display=swap');
+
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html{
+  background-color: black;
 }
+
+body {
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif; */
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: 'Loved by the King';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* position: inherit; */
+  top: 0;
+  /* min-height: 100vh; */
+  /* background-color: #13072a; */
+  /* background-image: url("./components/img/SB skull.png");
+  background-size: 300px 300px;
+  background-position: 20px 40px;
+  animation: diagonal linear 10s infinite; */
+  /* z-index: -2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; */
+}
+
+/* @keyframes diagonal {
+  from{background-position-x: 0px; background-position-y: 0px;}
+  to{background-position-x: 150px; background-position-y: -150px;}
+} */
